@@ -1,0 +1,400 @@
+body{
+margin:10px;
+padding:80px 0;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+ h1 {
+color: salmon;
+justify-content:center;
+display:inline-block;
+padding:5px;
+
+}
+
+h3{
+color:darkslategrey;
+}
+
+ h5 {
+    color:rgb(99, 92, 92);
+    display:inline-block
+}
+
+#firstContentWrap {
+    display:flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+
+}
+
+#firstimggroup {
+    justify-content: center;
+    align-items: center;
+    display:grid;
+    width: 70vw;
+    height: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr 1fr;
+    grid-gap: .5rem;
+    grid-template-areas: 
+    "header header header"
+    "img1 img2 img3"
+    "textOne textTwo textThree"
+    ". footer .";
+}
+
+.imgtitle {
+    justify-content: center;
+    align-items: center;
+    grid-area: header;   
+    text-align: center;
+}
+
+#firstimggroup img {
+    justify-content: center;
+    justify-items: center;
+    align-items:center;
+    width: 19vw;
+    height: 13vw;
+    /* padding:5px;  */
+}
+
+.img1 {
+    grid-area: img1;
+    justify-content: center;
+    justify-self: center;
+}
+
+.img2 {
+    grid-area: img2;
+    justify-content: center;
+    justify-self: center;
+    
+}
+
+.img3 {
+    grid-area: img3;
+    justify-self: center;
+}
+
+.textOne {
+    grid-area: textOne;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.textTwo{
+    grid-area: textTwo;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.textThree{
+    grid-area: textThree;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#firstimggroup button {
+    grid-area: footer;
+    color:white;
+    background-color: salmon;
+    width: 135px;
+    align-items: center;
+    justify-self: center;
+   
+}
+
+
+ #quotespace {
+     display:flex;
+     margin:45px 0;
+     padding: 30px 0;
+     height: 15vh;
+     justify-content: center;
+     align-items: center;
+     background-color: darkslategrey;
+     color:white;   
+ }
+
+
+.img5, .img4{
+    height: 300px;
+    width: 600px
+}
+
+
+
+
+#sect1 {
+    display: grid;
+    height: auto;
+    margin: 80px 12vw;
+    grid-gap: 1rem;
+    grid-template-columns: 4fr 2fr;
+    grid-template-rows: .35fr 300px .15fr .35fr .05fr .5fr;
+    grid-template-areas: 
+    "aliens blogsection1"
+    "img4 blogsection1"
+    "liltitle blogsection1"
+    "alientext blogsection1"
+    "cont1 blogsection1"
+    "0 blogsection1"
+}
+
+#blogssection1 {
+    display: flex;
+    margin-top: 3vh;
+    padding-left:3vw;
+    padding-top: 7vw;
+    /* float: right; */
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    grid-area: blogsection1;
+    height: 100vh;
+}
+
+#blogsection1 > p {
+    padding-top: 1.5vh;
+}
+
+.aliens {
+    grid-area: aliens;
+}
+
+.img4 {
+    grid-area: img4;
+    height: 300px
+}
+
+.liltitle {
+    grid-area: liltitle;
+    
+}
+
+.alientext {
+    grid-area: alientext;
+}
+
+.cont1 {
+    grid-area: cont1;
+    align-items: flex-start;
+    justify-self: left;
+    text-align: center;
+    height: 22px;
+    width: 150px;
+}
+
+#sect1 > .cont1 {
+    height: 22px;
+    width: 150px;
+}
+
+
+#sect2{
+    display:grid;
+    width: 60vw;
+    height: auto;
+    margin: 80px 12vw;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: .5fr 300px .05fr 1fr .5fr;
+    grid-gap: .5rem;
+    grid-template-areas: 
+    "leftT flexone"
+    "img5 flexone"
+    "0 flextwo"
+    /* "img 5 flextwo" */
+    "previewL flextwo"
+    "buttoncont flextwo"
+
+}
+
+.leftT {
+    grid-area: leftT;
+    text-align: left;
+}
+
+.img5 {
+    grid-area: img5;
+}
+
+.previewL {
+    grid-area: previewL;
+}
+
+.buttoncont {
+    grid-area: buttoncont;
+    justify-self: left;
+    height: 22px;
+    width: 135px;
+}
+
+
+#rightsideposts {
+    display:flex;
+    width: 300px;
+    padding-left: 7vw;
+    /* flex: left; */
+    /* flex-wrap: wrap; */
+    text-align: left;
+    flex-direction:column;
+    align-items: flex-start;
+    grid-area: flexone;
+}
+
+#rightsideposts2 {
+    display: flex;
+    width: 300px;
+    padding-left: 7vw;
+    /* flex: left;
+    flex-wrap: wrap; */
+    text-align: left;
+    align-items: flex-start;
+    flex-direction: column;
+    grid-area: flextwo
+}
+
+
+ .img6 , .img7 {
+     height: 80px;
+     width: 110px;
+     float:left;
+ }
+
+/* foot stuff below */
+
+
+ #footer {
+    background-color: lightblue;
+    margin-top: 5vw;
+  }
+  
+  
+  #footer #footertit {
+    text-align: center;
+  }
+  
+  #leftfoot {
+    float: left;
+    display: grid;
+    grid-gap: 0.5em;
+    margin-left: 22.5vw;
+    width: 22vw;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 4fr;
+    grid-template-areas:
+      "name email"
+      "textbox textbox";
+  }
+  
+  #leftfoot #namey {
+    grid-area: name;
+  }
+  
+  #leftfoot #emaily {
+    grid-area: email;
+  }
+  
+  #leftfoot #subject {
+    grid-area: textbox;
+  }
+  
+  #rightlinks {
+    display: grid;
+    float: right;
+    grid-gap: 0.5em;
+    margin-right: 22vw;
+    width: 22vw;
+    grid-template-columns: 1fr 3fr 1fr 3fr;
+    grid-template-rows: 2fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "feet feet feet feet"
+      "houseimg house twit twittoes"
+      "telimg phone insta handle"
+      "feetmail footmail dumbbook fb";
+  }
+  
+  .feettext {
+    grid-area: feet;
+  }
+  
+  .houseimg {
+    grid-area: houseimg;
+  }
+  
+  .house {
+    grid-area: house;
+  }
+  
+  .twit {
+    grid-area: twit;
+  }
+  
+  .twittoes {
+    grid-area: twittoes;
+  }
+  
+  .telimg {
+    grid-area: telimg;
+  }
+  
+  .phone {
+    grid-area: phone;
+  }
+  
+  .insta {
+    grid-area: insta;
+  }
+  
+  .handle {
+    grid-area: handle;
+  }
+  
+  .feetmail {
+    grid-area: feetmail;
+  }
+  
+  .footmail {
+    grid-area: footmail;
+  }
+  
+  .dumbbook {
+    grid-area: dumbbook;
+  }
+  
+  .fb {
+    grid-area: fb;
+  }
+  
+  label {
+    display: block;
+    font: 1rem;
+  }
+  
+  input,
+  label {
+    margin: 0.4rem 0;
+  }
+  
+  p {
+    font-size: smaller;
+  }
+  
+  
+  #rightfoot img {
+    height: 30px;
+    width: 30px;
+  }
