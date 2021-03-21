@@ -58,6 +58,7 @@ h5 {
 
 .bigboi {
   width: 55vw;
+  height: auto;
   display: inline-block;
   padding-bottom: 3vh;
 }
