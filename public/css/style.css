@@ -123,7 +123,11 @@ h5 {
   padding-bottom: 3vh;
 }
 
+<<<<<<< HEAD
 #firstimggroup a, button {
+=======
+#firstimggroup a, button{
+>>>>>>> 0ba3dcdb1dd67ef4d948a29dcef21ebe30194491
   grid-area: footer;
   color: white;
   background-color: salmon;
@@ -135,6 +139,10 @@ h5 {
   border: none;
   font-family: "Montserrat", sans-serif;
 }
+
+/* #firstimggroup a {
+  grid-area: footer;
+} */
 
 #quotespace {
   display: flex;
@@ -220,7 +228,7 @@ h5 {
 #cont1 {
   grid-area: cont1;
   align-items: flex-start;
-  justify-self: left;
+  /* justify-self: left; */
   text-align: center;
   height: 40px;
   width: 170px;
@@ -229,6 +237,13 @@ h5 {
   background-color: salmon;
   font-family: "Montserrat", sans-serif;
   color: white;
+}
+
+#cont
+
+#contread:hover {
+  cursor: pointer;
+  color:magenta;
 }
 
 .leftbutts {
